@@ -1,0 +1,551 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #080f1d;
+    color: #e8f1fc;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+
+.topo {
+    background: linear-gradient(120deg, #101e35, #122d4a);
+    padding: 65px 20px;
+    text-align: center;
+    border-bottom: 1px solid #24577b;
+}
+
+.topo h1 {
+    font-size: 43px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.topo h1 span {
+    color: #38bdf8;
+}
+
+.topo p {
+    color: #a9c2d9;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* MENU */
+
+nav {
+    background: #0c1728;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #203b59;
+}
+
+nav a {
+    color: #c5d6e8;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* CONTEÚDO */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+section {
+    background: #101d30;
+    border: 1px solid #203b59;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 25px;
+    scroll-margin-top: 85px;
+}
+
+section h2 {
+    color: #38bdf8;
+    font-size: 27px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #263e59;
+    padding-bottom: 12px;
+}
+
+section h3 {
+    color: #eaf5ff;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #bdcddd;
+    margin-bottom: 15px;
+}
+
+.numero {
+    color: #38bdf8;
+    margin-right: 8px;
+}
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.etiqueta {
+    display: inline-block;
+    color: #38bdf8;
+    background: #142e48;
+    border: 1px solid #24577b;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.apresentacao h2 {
+    font-size: 34px;
+    border: none;
+}
+
+.botao {
+    display: inline-block;
+    background: #087eae;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #0b9bd4;
+}
+
+/* ILUSTRAÇÃO */
+
+.ilustracao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 230px;
+}
+
+.circulo {
+    width: 190px;
+    height: 190px;
+    border: 2px solid #38bdf8;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #122b43;
+    box-shadow: 0 0 25px #087eae30;
+}
+
+.circulo span {
+    font-size: 52px;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.circulo p {
+    color: #b8d5e9;
+    margin: 0;
+}
+
+/* HISTÓRIA */
+
+.linha-tempo {
+    border-left: 2px solid #287ca5;
+    margin-left: 10px;
+    padding-left: 25px;
+}
+
+.evento {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.evento::before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 7px;
+    width: 12px;
+    height: 12px;
+    background: #38bdf8;
+    border-radius: 50%;
+}
+
+.evento h3 {
+    color: #38bdf8;
+}
+
+/* CIENTISTA */
+
+.cientista {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.cientista img {
+    width: 190px;
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #287ca5;
+}
+
+/* CARACTERÍSTICAS */
+
+.dados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.dado {
+    background: #142941;
+    padding: 18px;
+    border-left: 3px solid #38bdf8;
+    border-radius: 5px;
+}
+
+.dado strong {
+    display: block;
+    color: #38bdf8;
+    font-size: 21px;
+}
+
+.tipos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tipo {
+    padding: 18px;
+    border-radius: 7px;
+    background: #142941;
+    border: 1px solid #284663;
+}
+
+.tipo span {
+    display: block;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.uva span {
+    color: #b99af5;
+}
+
+.uvb span {
+    color: #e8c16c;
+}
+
+.uvc span {
+    color: #f18c8c;
+}
+
+.formula {
+    margin-top: 20px;
+    padding: 20px;
+    background: #142941;
+    border-radius: 7px;
+}
+
+.equacao {
+    text-align: center;
+    font-size: 23px;
+    color: #38bdf8;
+    margin: 12px 0;
+}
+
+/* APLICAÇÕES */
+
+.aplicacoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.aplicacoes article {
+    background: #142941;
+    padding: 20px;
+    border: 1px solid #284663;
+    border-radius: 7px;
+    transition: 0.2s;
+}
+
+.aplicacoes article:hover {
+    border-color: #38bdf8;
+}
+
+.icone {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* SAÚDE */
+
+.saude-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.alerta {
+    background: #302720;
+    border-left: 4px solid #e5a34f;
+    padding: 18px;
+    border-radius: 5px;
+}
+
+.alerta h3 {
+    color: #efbd79;
+}
+
+/* SIMULADOR */
+
+.laboratorio {
+    border-color: #28658a;
+}
+
+.simulador {
+    background: #0b182a;
+    border: 1px solid #285477;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.simulador-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.status {
+    color: #63d69b;
+    font-size: 13px;
+}
+
+.valor {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.valor strong {
+    display: block;
+    font-size: 40px;
+    color: #38bdf8;
+}
+
+.valor span {
+    color: #a9c2d9;
+}
+
+#controleOnda {
+    width: 100%;
+    margin: 15px 0;
+    accent-color: #38bdf8;
+    cursor: pointer;
+}
+
+.escala {
+    display: flex;
+    justify-content: space-between;
+    color: #a9c2d9;
+    font-size: 13px;
+}
+
+.resultado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.resultado > div {
+    background: #142941;
+    padding: 18px;
+    border-radius: 6px;
+}
+
+.legenda {
+    color: #a9c2d9;
+    font-size: 13px;
+}
+
+.resultado h3 {
+    color: #38bdf8;
+    margin-top: 5px;
+}
+
+.barra-cor {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(to right, #824cc7, #526dd0, #38a5d0);
+    border-radius: 10px;
+    margin-top: 12px;
+    position: relative;
+}
+
+#indicadorCor {
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    width: 5px;
+    height: 20px;
+    background: white;
+    border: 1px solid #101d30;
+    border-radius: 2px;
+}
+
+.descricao-resultado {
+    margin-top: 20px;
+    padding: 18px;
+    background: #142941;
+    border-radius: 6px;
+}
+
+.botoes-tipo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.botoes-tipo button {
+    background: #087eae;
+    color: white;
+    border: 1px solid #2497c8;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botoes-tipo button:hover {
+    background: #0b9bd4;
+}
+
+.aviso-simulador {
+    color: #a9c2d9;
+    font-size: 13px;
+    margin-top: 18px;
+}
+
+/* CONCLUSÃO */
+
+.conclusao {
+    border-left: 4px solid #38bdf8;
+}
+
+/* REFERÊNCIAS */
+
+.referencias ul {
+    padding-left: 22px;
+}
+
+.referencias li {
+    margin-bottom: 10px;
+    color: #bdcddd;
+}
+
+.referencias a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.referencias a:hover {
+    text-decoration: underline;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #0c1728;
+    border-top: 1px solid #203b59;
+    text-align: center;
+    padding: 25px;
+    color: #9eb3c8;
+    font-size: 14px;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+    .topo h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 22px 18px;
+    }
+
+    .apresentacao,
+    .cientista {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ilustracao {
+        width: 100%;
+    }
+
+    .dados,
+    .tipos,
+    .aplicacoes,
+    .saude-grid,
+    .resultado {
+        grid-template-columns: 1fr;
+    }
+
+    .simulador-topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
